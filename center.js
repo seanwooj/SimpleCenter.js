@@ -40,7 +40,9 @@ Copy this into the bottom of your HTML document and replace 'container' and 'cen
 and centerPiece with the div that you'd like to center within the HTML doc.
 
 <script type="text/javascript">
-	$(document).ready(center(container,centerPiece));		
+	$(document).ready(function(){
+		center(container,centerPiece);
+		});		
 	$(window).resize(function(){
 		center(container,centerPiece);
 	});
